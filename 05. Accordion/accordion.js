@@ -21,7 +21,7 @@ function solution() {
         <button class="button" id=${data._id}>More</button>
     </div>
     <div class="extra">
-        <p>Scalable Vector Graphics .....</p>
+        <p></p>
     </div>
     `;
     main.appendChild(div);
