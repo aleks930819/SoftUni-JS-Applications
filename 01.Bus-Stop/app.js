@@ -1,9 +1,11 @@
+
 async function getInfo() {
   const inputField = document.getElementById('stopId');
   const stopNameElement = document.getElementById('stopName');
   const busListElement = document.getElementById('buses');
 
   const busID = inputField.value;
+
   const BASE_URL = 'http://localhost:3030/jsonstore/';
 
   const url = `${BASE_URL}/bus/businfo/${busID}`;
@@ -22,7 +24,7 @@ async function getInfo() {
       liElement.innerText = `Bus ${b[0]} arrives in  ${b[1]} minutes `;
       busListElement.appendChild(liElement);
     });
-    
+
   } catch (error) {
     stopNameElement.innerText = 'Error';
   }
